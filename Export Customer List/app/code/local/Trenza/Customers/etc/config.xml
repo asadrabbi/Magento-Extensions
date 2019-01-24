@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Trenza_Customers>
+            <version>0.1.0</version>
+        </Trenza_Customers>
+    </modules>
+
+    <global>
+        <helpers>
+            <trenza_customers>
+                <class>Trenza_Customers_Helper</class>
+            </trenza_customers>
+        </helpers>
+        <blocks>
+            <trenza_customers>
+                <class>Trenza_Customers_Block</class>
+            </trenza_customers>
+        </blocks>
+    </global>
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Trenza_Customers before="Mage_Adminhtml">Trenza_Customers_Adminhtml</Trenza_Customers>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+
+    <adminhtml>
+        <layout>
+            <updates>
+                <trenza_customers>
+                    <file>trenza/trenza_customers.xml</file>
+                </trenza_customers>
+            </updates>
+        </layout>
+    </adminhtml>
+
+</config>

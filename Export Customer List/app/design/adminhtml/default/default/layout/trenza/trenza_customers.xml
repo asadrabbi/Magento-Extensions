@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <adminhtml_trenza_customers_index>
+        <reference name="content">
+			<block type="trenza_customers/adminhtml_customer" name="trenza_customers"></block>
+        </reference>
+    </adminhtml_trenza_customers_index>
+</layout>

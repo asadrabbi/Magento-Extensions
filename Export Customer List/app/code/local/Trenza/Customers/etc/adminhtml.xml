@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <report>
+            <children>
+				<trenza_customers translate="title">
+					<title>Customers List</title>
+					<action>adminhtml/trenza_customers</action>
+					<sort_order>100</sort_order>
+				</trenza_customers>
+            </children>
+        </report>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <trenza_customers>
+                                        <title>Trenza Reports Section</title>
+                                    </trenza_customers>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                    <report>
+                        <children>
+                            <salesroot>
+                                <children>
+                                    <trenza_customers translate="title">
+                                        <title>Trenza Customers</title>
+                                        <children>
+                                            <view translate="title">
+                                                <title>View</title>
+                                            </view>
+                                        </children>
+                                    </trenza_customers>
+                                </children>
+                            </salesroot>
+                        </children>
+                    </report>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
