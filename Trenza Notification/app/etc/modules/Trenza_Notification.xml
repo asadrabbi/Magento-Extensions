@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Trenza_Notification>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Trenza_Notification>
+    </modules>
+</config> 

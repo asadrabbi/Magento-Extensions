@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <notification_index_index>
+        <reference name="content">
+            <block type="notification/notification" name="notification" template="trenza/notification/notification.phtml" />
+        </reference>
+    </notification_index_index>
+    <cms_index_index>
+        <reference name="header">
+            <block type="notification/notification" name="notification" template="trenza/notification/notification.phtml" />
+        </reference>
+    </cms_index_index>
+</layout> 

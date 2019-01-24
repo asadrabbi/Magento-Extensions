@@ -1,0 +1,19 @@
+<?php
+	$notificationCollection = $this->getNotificationCollection();
+	$i = 0;
+?>
+
+<div class="notification">
+    <ul class="rnotifications" id="notification1">
+        <?php foreach($notificationCollection as $notification): $i++; ?>
+        <li>
+            <h4><?php echo $notification['title']?></h4>
+            
+            <?php if ($notification['content'] != null):?>
+    		<p class="caption"><?php echo $notification['content']; ?></p>
+            <?php endif;?>
+        </li>
+        <?php endforeach; ?>  
+    </ul>
+</div>
+<div class="clear"></div>

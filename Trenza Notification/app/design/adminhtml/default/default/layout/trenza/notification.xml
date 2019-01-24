@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <notification_adminhtml_notification_index>
+        <reference name="content">
+            <block type="notification/adminhtml_notification" name="notification" />
+        </reference>
+    </notification_adminhtml_notification_index>
+</layout>
