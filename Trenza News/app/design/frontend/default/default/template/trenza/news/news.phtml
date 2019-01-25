@@ -1,0 +1,20 @@
+<?php
+	$newsCollection = $this->getNewsCollection();
+	$i = 0;
+?>
+
+<?php echo count($newsCollection); ?>
+<?php if($newsCollection->getSize()): ?>
+<?php #print_r($newsCollection);  ?>
+<div class="news">
+    <ul class="" id="">
+        <?php foreach($newsCollection as $news): $i++; ?>
+        <li>
+            <a href="<?php echo $this->getUrl('*/*/view').'id/'.$news->getId() ;?>" title="<?php echo $news->getTitle(); ?>"><?php echo $news->getTitle(); ?></a>
+        </li>
+        <?php endforeach; ?>  
+    </ul>
+</div>   
+
+<?php endif;?>
+

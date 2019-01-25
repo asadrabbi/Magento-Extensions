@@ -1,0 +1,11 @@
+<?php 
+    $title = Mage::registry('news_23')->getTitle();
+    $description =  Mage::registry('news_23')->getContent();
+    $file =   Mage::registry('news_23')->getFilename();
+ ?>
+<div class="news">
+<h1><?php echo $title; ?></h1> 
+<img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'news/' . $file?>" alt="<?php echo $file?>" class="news-img"/>
+<br><p><?php echo $description; ?></p>
+</div>   
+
